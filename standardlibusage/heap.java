@@ -7,7 +7,7 @@ import java.util.PriorityQueue;
  */
 public class heap {
     public static void main(String[] args) {
-        PriorityQueue<Integer> minHeap = new PriorityQueue<>(0, null);
+        PriorityQueue<Integer> minHeap = new PriorityQueue<>();
         // heap insertion
         minHeap.add(20);
         minHeap.add(5);
@@ -17,7 +17,7 @@ public class heap {
         int minElement = minHeap.poll();
         System.out.println("Minimum Element : " + minElement);
 
-        System.out.println("Minimum Element : " + minElement);
+        System.out.println("Minimum Element : " + minHeap.peek());
         // The poll() method removes and returns the minimum element (the root of the
         // heap),
         // and peek() returns the minimum element without removing it.
