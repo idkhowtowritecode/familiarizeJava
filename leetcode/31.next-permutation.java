@@ -9,8 +9,9 @@ class Solution {
     public void nextPermutation(int[] nums) {
        /*
         * 1. finding the last peak element
-        * 2. swap with nearest lower element
-        * 3. sorting with ascending order after the peak element
+        * 2. find nearest lower element on the left
+        * 3. swap it with next greater element on the right
+        * 4. sorting with ascending order after the nearest lower element
         * Special case:
         * descending order => ascending order
         */
